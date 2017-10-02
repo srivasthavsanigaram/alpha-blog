@@ -1,0 +1,97 @@
+<html lang="en-US">
+<head>  <title> Ruby on Rails Test Page </title></head>
+<style>
+  header {
+    padding: 30px 24px 24px 24px;
+    padding-top: 30px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+	position: relative;
+    color: Red;
+    background-color: white;
+}
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: black;
+}
+	header h2 {
+    margin: 5px 0 0;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #585450;
+}
+  footer  {
+    padding: 1em;
+    color: White;
+    background-color: Gray;
+    clear: left;
+    text-align: center;
+}
+    article {
+	font-family: Georgia, serif;
+	line-height: 2rem;
+    font-size: 1.3rem;
+    margin-left: 170px;
+    border-left: 1px solid gray;
+	margin: 0;
+    padding: 1em;
+    overflow: hidden;
+}
+image_tag {
+  display: block;
+  position: relative;
+  float: left;
+}
+ul {
+   border-top: 5px solid #CC342D;
+   list-style-type: none;
+   margin: 0;
+   padding: 0 8px;
+   -webkit-border-bottom-left-radius: 6px;
+   -moz-border-radius-bottomleft: 6px;
+   border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-bottom-right-radius: 6px;
+   overflow: hidden;
+   background-color:#333;
+}
+
+li {
+    float: left;
+}
+li a {
+      display: block;
+	  color: green;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+}
+
+li a:hover {
+     background-color: White;
+}
+
+</style>
+
+<body>
+<header>
+      <%= image_tag("ruby.jpg", alt: "ruby", :height => 80, :width => 80, :crop => :fill, :align => "left") %>
+      <h1>Ruby</h1>
+      <h2>A Programmer's Best Friend</h2>
+ </header>
+ <ul>
+ <li><a href="https://www.udemy.com" style="color:green;" style="font-family:verdana;"> <abbr title="Online Learning Program"> Udemy </abbr> </a> </li>
+ <li><a href="http://api.rubyonrails.org" style="color:Green;">RubyRails</a> </li>
+ <li> <%= link_to 'About', about_path %> </li>
+  </ul>
+  <h3  :style "margin: 5px 0 0; color: black; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; color: #585450;">Rails5 </h3>
+  <p> Newly updated for Rails 5, the Ruby on Rails Tutorial book and screencast series teach you how to develop and deploy rails, industrial-strength web applications with Ruby on Rails, the open-source web framework that powers top websites such as Twitter, Hulu, GitHub, and the Yellow Pages.<br> The Ruby on Rails Tutorial book is available for free online and is available for purchase as an ebook (PDF, EPUB, and MOBI formats). <br> The companion screencast series includes 14 individual lessons, one for each chapter of the Ruby on Rails Tutorial book.</p>
+
+<footer> Copyright &copy rubyonrails.org </footer>
+</body>
+</html>
