@@ -5459,3 +5459,1092 @@ Processing by PageController#home as HTML
 Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 192.168.56.1 at 2017-10-08 15:39:44 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 1963ms (Views: 1961.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-08 15:40:28 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ar-default-bg: ": expected expression (e.g. 1px, bold), was "#00000;"):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/stylesheets/custom.css.scss:2
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__547304153371981953_69860705588300'
+Started GET "/" for 192.168.56.1 at 2017-10-08 15:40:53 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2065ms (Views: 2059.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-08 15:46:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+A server is already running. Check /u01/rails_projects/alpha-blog/tmp/pids/server.pid.
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Exiting
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:46:41 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2439ms (Views: 2420.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:49:13 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:15 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 09:51:18 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (50.7ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 415ms (Views: 139.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 09:51:21 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:22 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:23 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 192.168.56.1 at 2017-10-09 09:51:24 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#about as HTML
+  Rendering page/about.html.erb within layouts/application
+  Rendered page/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:26 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 09:51:27 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:28 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:29 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (10.5ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:30 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (4.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:31 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:36 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:37 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:39 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:51:40 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:53:20 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:53:22 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:53:24 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:54:19 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 09:54:20 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:02:45 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:02:46 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 10:02:49 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:02:52 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 192.168.56.1 at 2017-10-09 10:02:54 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#about as HTML
+  Rendering page/about.html.erb within layouts/application
+  Rendered page/about.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:02:55 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:04:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 2095ms (Views: 2093.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:17:32 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 124ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 10:17:34 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 77.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:17:35 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 10:17:36 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 10:26:17 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navigation.html.erb (410.6ms)
+Completed 500 Internal Server Error in 528ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_articles_path' for #<#<Class:0x007fd660af7948>:0x007fd6501ebd00>
+Did you mean?  new_article_path
+               new_article_url
+               edit_article_path):
+    19:         <li class="dropdown">
+    20:           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></a>
+    21:           <ul class="dropdown-menu">
+    22:             <li><%= link_to "New Articles", new_articles_path %> </li>
+    23:             <li><a href="#">Another action</a></li>
+    24:             <li><a href="#">Something else here</a></li>
+    25:             <li role="separator" class="divider"></li>
+  
+app/views/layouts/_navigation.html.erb:22:in `_app_views_layouts__navigation_html_erb___1804644463033144776_70279377725580'
+app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__2569266014535764662_70279221953300'
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 10:27:11 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 83.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-09 10:27:14 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (364.1ms)
+  Rendered articles/new.html.erb within layouts/application (403.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 512ms (Views: 477.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 10:27:16 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:27:18 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:27:19 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 10:27:21 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 11:07:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 11:07:38 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 88ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 11:07:42 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 11:10:17 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 11:12:29 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 761ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after ".": expected class name, was " center"):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/stylesheets/custom.css.scss:20
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2569266014535764662_70279382686980'
+Started GET "/" for 192.168.56.1 at 2017-10-09 11:13:47 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 2024ms (Views: 2018.7ms | ActiveRecord: 0.0ms)
+
+
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.56.1 at 2017-10-09 16:09:44 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 1452ms (Views: 1409.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 16:09:58 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (31.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 169ms (Views: 117.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 16:09:59 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-09 16:10:02 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (114.0ms)
+  Rendered articles/new.html.erb within layouts/application (116.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 201ms (Views: 185.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 16:10:07 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 70ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 16:10:50 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-09 16:10:58 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (2.7ms)
+  Rendered articles/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-09 16:11:01 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.5ms)
+  Rendered articles/new.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:00:21 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3148ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_30626060'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:00:50 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814377251240'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:00:51 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814387154040'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:01:53 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 1982ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814378263680'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:03:00 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814325609240'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:05:34 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814325920120'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:05:35 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814377422860'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:05:36 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814384485860'
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:05:38 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ utime_internal - /u01/rails_projects/alpha-blog/tmp/cache/assets/sprockets/v3.0/99/99m8UCKl4j8IpsVOK8ltLHyNh8Ae0nHw3GBkC34V_co.cache):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3169112786040707470_69814391263600'
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:07:57 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 487ms (Views: 468.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:10:05 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2076ms (Views: 2066.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:12:45 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 2077ms (Views: 2074.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:13:25 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2018ms (Views: 2016.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:26:15 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2107ms (Views: 2091.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:28:51 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 1975ms (Views: 1968.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:31:13 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 2193ms (Views: 2181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 19:40:00 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 2087ms (Views: 2083.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:25:17 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:27:43 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "   margin-top:": expected "{", was ""):
+    4:     <title>AlphaBlog</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10:   <body>
+  
+app/assets/stylesheets/custom.css.scss:51
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2846397185827978867_70039682235140'
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:28:28 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2150ms (Views: 2133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:28:55 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1877ms (Views: 1873.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:29:16 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1884ms (Views: 1879.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:31:34 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1889ms (Views: 1884.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 192.168.56.1 at 2017-10-09 20:31:47 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#about as HTML
+  Rendering page/about.html.erb within layouts/application
+  Rendered page/about.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:31:52 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 192.168.56.1 at 2017-10-09 20:31:54 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#about as HTML
+  Rendering page/about.html.erb within layouts/application
+  Rendered page/about.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 192.168.56.1 at 2017-10-09 20:31:59 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#about as HTML
+  Rendering page/about.html.erb within layouts/application
+  Rendered page/about.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 192.168.56.1 at 2017-10-09 20:32:03 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 95ms (Views: 83.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-09 20:32:05 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (213.1ms)
+  Rendered articles/new.html.erb within layouts/application (215.4ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 291ms (Views: 289.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.56.1 at 2017-10-09 20:32:08 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
