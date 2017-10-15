@@ -9962,3 +9962,41 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 105ms (Views: 98.5ms | ActiveRecord: 1.5ms)
 
 
+rails aborted!
+OptionParser::AmbiguousOption: ambiguous option: -b
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/commands/rake/rake_command.rb:19:in `block in perform'
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/commands/rake/rake_command.rb:18:in `perform'
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/command.rb:46:in `invoke'
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/commands.rb:16:in `<top (required)>'
+/u01/rails_projects/alpha-blog/bin/rails:9:in `require'
+/u01/rails_projects/alpha-blog/bin/rails:9:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+/u01/rails_projects/alpha-blog/bin/spring:15:in `require'
+/u01/rails_projects/alpha-blog/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+OptionParser::InvalidOption: invalid option: b
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/commands/rake/rake_command.rb:19:in `block in perform'
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/commands/rake/rake_command.rb:18:in `perform'
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/command.rb:46:in `invoke'
+/usr/local/rvm/gems/ruby-2.3.1/gems/railties-5.1.4/lib/rails/commands.rb:16:in `<top (required)>'
+/u01/rails_projects/alpha-blog/bin/rails:9:in `require'
+/u01/rails_projects/alpha-blog/bin/rails:9:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `load'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/rails.rb:28:in `call'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client/command.rb:7:in `call'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/client.rb:30:in `run'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/bin/spring:49:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `load'
+/usr/local/rvm/gems/ruby-2.3.1/gems/spring-2.0.2/lib/spring/binstub.rb:31:in `<top (required)>'
+/u01/rails_projects/alpha-blog/bin/spring:15:in `require'
+/u01/rails_projects/alpha-blog/bin/spring:15:in `<top (required)>'
+bin/rails:3:in `load'
+bin/rails:3:in `<main>'
+(See full trace by running task with --trace)
