@@ -10931,3 +10931,438 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 71ms (Views: 67.2ms | ActiveRecord: 1.1ms)
 
 
+=> Booting Puma
+=> Rails 5.1.4 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.10.0 (ruby 2.3.1-p112), codename: Russell's Teapot
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/" for 192.168.56.1 at 2017-10-21 21:29:27 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PageController#home as HTML
+  Rendering page/home.html.erb within layouts/application
+  Rendered page/home.html.erb within layouts/application (1.3ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (18.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 642ms (Views: 617.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 192.168.56.1 at 2017-10-21 21:29:32 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 8]]
+  Rendered users/index.html.erb within layouts/application (65.4ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.2ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 159ms (Views: 136.6ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/categories" for 192.168.56.1 at 2017-10-21 21:29:34 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  Rendered categories/index.html.erb within layouts/application (7.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (2.9ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 116ms (Views: 112.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 192.168.56.1 at 2017-10-21 21:29:35 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 8]]
+  Rendered users/index.html.erb within layouts/application (19.2ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 131ms (Views: 125.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/login" for 192.168.56.1 at 2017-10-21 21:29:37 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (47.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.4ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 253ms (Views: 184.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/login" for 192.168.56.1 at 2017-10-21 21:29:47 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"egNT4sJ+JxIgtYUqbW5Bgw4rQzh0T/cVl3b56UaS/sq2ATGRQIFAZ+D9odtj17dU0IR6Q71MhP2zavXH4JI2Mg==", "session"=>{"email"=>"rajesh@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh@example.com"], ["LIMIT", 1]]
+Redirected to http://192.168.56.24:3000/users/12
+Completed 302 Found in 98ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/12" for 192.168.56.1 at 2017-10-21 21:29:47 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 12], ["LIMIT", 2], ["OFFSET", 0]]
+  Rendered articles/_article.html.erb (6.0ms)
+  Rendered users/show.html.erb within layouts/application (19.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 120ms (Views: 103.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-21 21:29:52 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.1ms)
+  Rendered articles/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:25: syntax error, unexpected ':'
+...checkbox") {cb.check_box{class: "checkbox"} + cb.text) 
+...                               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:25: syntax error, unexpected ')', expecting '}'
+...x{class: "checkbox"} + cb.text) 
+...                               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:35: syntax error, unexpected keyword_end, expecting '}'
+'.freeze;   end 
+               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting '}'
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:46: syntax error, unexpected keyword_end, expecting '}'):
+  
+app/views/articles/_form.html.erb:25: syntax error, unexpected ':'
+app/views/articles/_form.html.erb:25: syntax error, unexpected ')', expecting '}'
+app/views/articles/_form.html.erb:35: syntax error, unexpected keyword_end, expecting '}'
+app/views/articles/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting '}'
+app/views/articles/_form.html.erb:46: syntax error, unexpected keyword_end, expecting '}'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__246446182100994646_69881925344240'
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-21 21:30:44 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.4ms)
+  Rendered articles/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:25: syntax error, unexpected ':'
+...checkbox") {cb.check_box{class: "checkbox"} + cb.text) 
+...                               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:25: syntax error, unexpected ')', expecting '}'
+...x{class: "checkbox"} + cb.text) 
+...                               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:35: syntax error, unexpected keyword_end, expecting '}'
+'.freeze;   end 
+               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting '}'
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:46: syntax error, unexpected keyword_end, expecting '}'):
+  
+app/views/articles/_form.html.erb:25: syntax error, unexpected ':'
+app/views/articles/_form.html.erb:25: syntax error, unexpected ')', expecting '}'
+app/views/articles/_form.html.erb:35: syntax error, unexpected keyword_end, expecting '}'
+app/views/articles/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting '}'
+app/views/articles/_form.html.erb:46: syntax error, unexpected keyword_end, expecting '}'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__246446182100994646_69882005389380'
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-21 21:30:45 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (1.2ms)
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:25: syntax error, unexpected ':'
+...checkbox") {cb.check_box{class: "checkbox"} + cb.text) 
+...                               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:25: syntax error, unexpected ')', expecting '}'
+...x{class: "checkbox"} + cb.text) 
+...                               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:35: syntax error, unexpected keyword_end, expecting '}'
+'.freeze;   end 
+               ^
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting '}'
+/u01/rails_projects/alpha-blog/app/views/articles/_form.html.erb:46: syntax error, unexpected keyword_end, expecting '}'):
+  
+app/views/articles/_form.html.erb:25: syntax error, unexpected ':'
+app/views/articles/_form.html.erb:25: syntax error, unexpected ')', expecting '}'
+app/views/articles/_form.html.erb:35: syntax error, unexpected keyword_end, expecting '}'
+app/views/articles/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting '}'
+app/views/articles/_form.html.erb:46: syntax error, unexpected keyword_end, expecting '}'
+app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__246446182100994646_11308780'
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-21 21:31:51 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered articles/_form.html.erb (309.9ms)
+  Rendered articles/new.html.erb within layouts/application (311.4ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 392ms (Views: 388.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-21 21:32:16 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered articles/_form.html.erb (8.2ms)
+  Rendered articles/new.html.erb within layouts/application (17.6ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 192.168.56.1 at 2017-10-21 21:32:20 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered articles/_form.html.erb (8.7ms)
+  Rendered articles/new.html.erb within layouts/application (10.1ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (2.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 78.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 192.168.56.1 at 2017-10-21 21:33:38 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2+PiFeXCDZ71HGI6N8guoBWNG5oJKpgh0Ld7r6m25T3Cx5+yi4nOw4hpxC06FUDJTSTCpT0/LxcTwXRqD6RISw==", "article"=>{"title"=>"This is my categories set title", "description"=>"Action body description for ArticleCategory UI changes", "category_ids"=>["", "1", "2"]}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Unpermitted parameter: :category_ids
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "description", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "This is my categories set title"], ["description", "Action body description for ArticleCategory UI changes"], ["created_at", "2017-10-21 21:33:38.053551"], ["updated_at", "2017-10-21 21:33:38.053551"], ["user_id", 12]]
+  [1m[35m (299.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/articles/27
+Completed 302 Found in 317ms (ActiveRecord: 301.9ms)
+
+
+Started GET "/articles/27" for 192.168.56.1 at 2017-10-21 21:33:38 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (38.8ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 150ms (Views: 115.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/articles/27" for 192.168.56.1 at 2017-10-21 21:41:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (41.3ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (20.3ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 229ms (Views: 198.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/12" for 192.168.56.1 at 2017-10-21 21:51:50 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."user_id" = ? LIMIT ? OFFSET ?[0m  [["user_id", 12], ["LIMIT", 2], ["OFFSET", 0]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered articles/_article.html.erb (28.4ms)
+  Rendered users/show.html.erb within layouts/application (47.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (12.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 221ms (Views: 127.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/articles/27" for 192.168.56.1 at 2017-10-21 21:51:57 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (14.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (2.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 85.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/27/edit" for 192.168.56.1 at 2017-10-21 21:51:59 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (2.1ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "categories"."id" FROM "categories" INNER JOIN "article_categories" ON "categories"."id" = "article_categories"."category_id" WHERE "article_categories"."article_id" = ?[0m  [["article_id", 27]]
+  Rendered articles/_form.html.erb (59.1ms)
+  Rendered articles/edit.html.erb within layouts/application (62.9ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (18.2ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 225ms (Views: 148.3ms | ActiveRecord: 2.6ms)
+
+
+Started PATCH "/articles/27" for 192.168.56.1 at 2017-10-21 21:52:04 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DKqO8WK1hsJ1JyOvlkI8g7FafAqWJ0o/wZnNoj5lNN8w41SUFW8dWpS30ndFCeV6mFbwXNc5b+CfgAp+/NPnEw==", "article"=>{"title"=>"This is my categories set title", "description"=>"Action body description for ArticleCategory UI changes", "category_ids"=>["", "1", "2"]}, "commit"=>"Update Article", "id"=>"27"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" IN (1, 2)[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "article_categories" ON "categories"."id" = "article_categories"."category_id" WHERE "article_categories"."article_id" = ?[0m  [["article_id", 27]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "article_categories" ("article_id", "category_id") VALUES (?, ?)[0m  [["article_id", 27], ["category_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "article_categories" ("article_id", "category_id") VALUES (?, ?)[0m  [["article_id", 27], ["category_id", 2]]
+  [1m[35m (210.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/articles/27
+Completed 302 Found in 249ms (ActiveRecord: 214.8ms)
+
+
+Started GET "/articles/27" for 192.168.56.1 at 2017-10-21 21:52:05 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (14.6ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 104.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/articles/27/edit" for 192.168.56.1 at 2017-10-21 21:52:33 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "categories"."id" FROM "categories" INNER JOIN "article_categories" ON "categories"."id" = "article_categories"."category_id" WHERE "article_categories"."article_id" = ?[0m  [["article_id", 27]]
+  Rendered articles/_form.html.erb (11.5ms)
+  Rendered articles/edit.html.erb within layouts/application (12.9ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (2.8ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 90.8ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/articles/27" for 192.168.56.1 at 2017-10-21 21:52:38 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d0eeAw/mZpY/FmkipXd/saHFmT5hWN2drMdYMvcqRBFLDkRmeDz9Dt6GmPp2PKZIiMkVaCBG+ELy3p/uNZyX3Q==", "article"=>{"title"=>"This is my categories set title", "description"=>"Action body description for ArticleCategory UI changes", "category_ids"=>["", "1", "2", "3"]}, "commit"=>"Update Article", "id"=>"27"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" IN (1, 2, 3)[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" INNER JOIN "article_categories" ON "categories"."id" = "article_categories"."category_id" WHERE "article_categories"."article_id" = ?[0m  [["article_id", 27]]
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "article_categories" ("article_id", "category_id") VALUES (?, ?)[0m  [["article_id", 27], ["category_id", 3]]
+  [1m[35m (235.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.56.24:3000/articles/27
+Completed 302 Found in 256ms (ActiveRecord: 238.7ms)
+
+
+Started GET "/articles/27" for 192.168.56.1 at 2017-10-21 21:52:38 +0000
+Cannot render console from 192.168.56.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles" WHERE "articles"."user_id" = ?[0m  [["user_id", 12]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendered articles/show.html.erb within layouts/application (29.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered layouts/_navigation.html.erb (3.8ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 145ms (Views: 134.1ms | ActiveRecord: 2.1ms)
+
+
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2017-10-21 21:57:30 +0000 ===
+- Goodbye!
+Exiting
